@@ -17,6 +17,7 @@ function absenden() {
     vordererTeil.innerHTML = vorne;
     hintererTeil.innerHTML = hinten;
   } else {
+    let e = zeichenkette.value.indexOf(trennung.value);
     let y = trennung.value.length;
     let vorne = zeichenkette.value.slice(0, e + y);
     let hinten = zeichenkette.value.slice(e + y);
