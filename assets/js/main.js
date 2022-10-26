@@ -23,5 +23,4 @@ function absenden() {
     vordererTeil.innerHTML = vorne;
     hintererTeil.innerHTML = hinten;
   }
-else 
 }
