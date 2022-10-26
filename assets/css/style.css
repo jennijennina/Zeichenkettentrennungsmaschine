@@ -1,0 +1,30 @@
+label,
+input {
+  display: block;
+  margin: 15px 0;
+  width: 35rem;
+}
+input[type="radio"],
+label {
+  width: inherit;
+  display: inline-block;
+}
+#btn {
+  display: block;
+  margin: 15px 0;
+}
+label {
+  font-weight: bold;
+}
+input[type="radio"] + label {
+  font-weight: inherit;
+}
+section article {
+  display: flex;
+}
+section div {
+  width: 48%;
+}
+.container {
+  margin-top: 3rem;
+}

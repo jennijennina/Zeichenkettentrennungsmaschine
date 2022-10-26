@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ergebnisvorschau</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body class="container">
+    <h1>Zeichenkettentrennungsmaschine</h1>
+    <form action="" onsubmit=" return false">
+      <label for="zeichenkette">Zu trennende Zeichenkette</label>
+      <input type="text" name="zeichenkette" id="zeichenkette" required />
+      <label for="trennung">Zeichenkette für die Trennungsposition</label>
+      <input type="text" name="trennung" id="trennung" required />
+      <div>
+        <input type="radio" name="radio" id="davor" required />
+        <label for="">davor trennen </label>
+      </div>
+      <div>
+        <input type="radio" name="radio" id="danach" required />
+        <label for="">danach trennen </label>
+      </div>
+      <button id="btn" value="submit" onclick="absenden()">
+        Daten absenden
+      </button>
+    </form>
+    <section>
+      <!-- ===== AUSGABE ===== -->
+      <h2>Ausgabe</h2>
+      <article>
+        <div>
+          <h3>Vorderer Teil</h3>
+          <span id="vordererTeil"> </span>
+        </div>
+        <div>
+          <h3>Hinterer Teil</h3>
+          <span id="hintererTeil"> </span>
+        </div>
+      </article>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
